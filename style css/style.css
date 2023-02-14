@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+* ,
+*::after , *::before
+{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto , "sans-serif";
+}
+
+body{
+    font-family:  roboto ,sans-serif;
+    background-color:#f1f1f1;
+ 
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*================ start header section ===========================*/
+
+.header{
+    color: white;
+    width: 100%;
+    height: 65px;
+    background-color:#1e00ff;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo a{
+    padding-left: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar{
+    padding-right: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.navbar ul li a{
+    color: white;
+    transition: 0.15s;
+    position: relative;
+}
+
+
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a:active{
+    color: aqua;
+}
+
+/*================ end header section ===========================*/
+
+
+/*================ start home-background section ===========================*/
+
+.Home-background{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image:url('../images/home-background.png'); */
+    background-size: cover;
+    /* background-image:linear-gradient( to right , rgba(0, 0, 255, 0.685) , rgba(34, 5, 255, 0.346)); */
+    
+}
+
+
+
+/* ======================== start sgin ====================== */
+
+.right{
+    background-image:linear-gradient(to right ,rgb(11, 7, 53) , rgb(1, 1, 8) 75%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    position:relative;
+
+}
+
+.left{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-1920x1080-4523.jpg');
+    background-position:right 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.public{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.public p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.public h2{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.line-between{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-between h4{
+    margin: 0px 7px ;
+    letter-spacing: 1px;
+}
+
+.line-between .line{
+    width: 150px;
+    height: 2px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.public a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 50px;
+    background-image:linear-gradient(to right, rgb(57, 57, 255),rgb(81, 81, 248));
+    border-radius: 4px;
+    transition: 0.22s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+}
+
+.public a:hover{
+    filter: contrast(150%);
+}
+
+.public a:active{
+   opacity: 0.8;
+}
+
+
+
+.sgin{
+    color: white;
+    background-color:black ;
+    margin: 30px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width :300px ;
+    width:80%;
+    height: 80%;
+    border: 0px solid black;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sgin p{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.sgin::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg , gold ,blue,blue) ;
+    top: -50%;
+    left: -50%;
+    transform-origin:bottom right ;
+    animation: anime 12s linear infinite;
+    
+}
+
+.sgin::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg ,gold,blue,blue ) ;
+    top: -50%;
+    left: -50%;
+    transform-origin:bottom right ;
+    animation: anime 12s linear infinite;
+    animation-delay: -6s;
+}
+
+
+.all-content{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    background:black;
+    z-index: 10;
+    inset: 3px;
+    border-radius: 2px;
+}
+
+
+@keyframes anime {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(1080deg);
+    }
+}
+
+
+.all-content h2{
+    letter-spacing: 0.1em;
+}
+
+.input-box{
+    position: relative;
+    width: 80%;
+    margin-top: 40px;
+}
+
+
+.input-box input{
+    width: 100%;
+    position: relative;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    color:#fff;
+    border: none;
+    outline: none;
+    z-index: 10;
+    font-size:1.2rem;
+    caret-color: rgba(255, 255, 255, 0.576);
+    
+}
+
+
+.input-box span{
+    position: absolute;
+    padding: 20px 10px 10px;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+.input-box input:valid ~span ,
+.input-box input:focus ~span {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 6px blue;
+    font-size: 0.75rem;
+    transform: translatex(-10px) translatey(-39px);
+}
+
+
+.input-box i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.603);
+    height: 2px;
+    pointer-events: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+.input-box input:valid ~i ,
+.input-box input:focus ~i {
+    height: 44px;
+}
+
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 0.80em;
+}
+
+
+.links a{
+    text-decoration: none;
+    color: rgb(149, 236, 241);
+    margin: 8px auto;
+    opacity: 0.6;
+    transition: 0.22s;
+    letter-spacing: 0.05em;
+    
+    
+}   
+.links a:hover{
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: 0px 0px 3px white;
+}
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline:none;
+    width: 70%;
+    height: 60px;
+    margin-top: 40px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid blue;
+    border-radius: 5px;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    color: blue;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.submit:hover{
+    font-size: 1.9rem;
+}
+
+.submit::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 110%;
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+    transition: .6s;
+    z-index: -1;
+    margin: 0 auto;
+}
+
+
+.submit:hover::after{
+    width: 110%;
+    left: 0;
+     
+}
+
+
+.submit:hover{
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+.submit:active::after{
+    opacity: 0.4;
+}
+
+/*================ end home-background section ===========================*/
+
+
+/*================ start defination section ===========================*/
+
+.defination{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 40vh;
+    margin-top: 80px;
+}
+
+.defination .def{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 14%;
+    background-color: rgb(242, 242, 242);
+    min-height: 200px;
+    min-width: 190px;
+    color: rgb(0, 0, 0);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.948);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.defination .def h4{
+    font-size: 1.3rem;
+    margin: 15px auto;
+    color: black;
+    padding: 4px;
+}
+
+
+.defination .def p{
+    padding: 10px;
+}
+
+
+.defination .def .img{
+    width: 100%;
+    height: 130px;
+}
+
+
+.defination .def .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* ====================== start card ==================== */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height:600px ;
+    width: 100%;
+    /* background-color: black; */
+    background-image:url('https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686968_KS9NVTJgvjMQs2FniVHyIJaAIcg5p7D0.jpg') ;
+    margin-top: 100px;
+    
+    padding: 40px 30px 100px 30px;
+    
+    
+}
+
+
+.card-container .title{
+    color: blue;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+    height: 60px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30% / 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.card-container .all-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-container .all-card .card{
+    flex-basis: 24%;
+    min-width:250px;
+    min-height: 420px;
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    min-width: 260px;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    color: white;
+    line-height: 1.5;
+    border-radius: 7px;
+}
+
+
+.card-container .all-card .card div {
+    width: 100%;
+    height: 170px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+
+.card-container .all-card .card div img{
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    object-fit: cover;
+    transition: 0.22s;   
+}
+
+
+.card-container .all-card .card div img:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
+}
+
+
+.card-container .all-card .card h5{
+    font-size: 1.3rem;
+    color: white;
+    margin: 10px auto;
+}
+
+
+.card-container .all-card .card p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.card-container .title :nth-child(1) {
+    transform: translateX(-200px);
+    transition: 0.5s;
+}
+
+
+.card-container .title :nth-child(3) {
+    transform: translateX(200px);
+    transition: 0.5s;
+}
+
+
+.card-container .title:hover :nth-child(1){
+    transform: translateX(40px);
+}
+
+
+.card-container .title:hover :nth-child(3){
+    transform: translateX(-55px);
+}
+
+
+.card-container .title :nth-child(2){
+    transform: translatex(-15%);
+    transition: 0.4s;
+}
+
+
+.card-container .title:hover :nth-child(2){
+    transform: scale(0.01)
+    
+}
+/* ====================== start card ==================== */
+
+
+.general-information{
+    margin-top: 150px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    background-image:url('../images/background-information.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    color: white;
+    
+}
+
+.general-information .information{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    white-space:normal ;
+    margin-bottom:50px;
+}
+
+.general-information .information ul li a{
+    color: white;
+}
+
+.general-information .information ul li a span{
+    padding-left: 5px;
+}
+
+.general-information .information ul{
+    height: 100%;
+}
+
+.general-information .information ul li {
+    margin-bottom: 5px;
+
+}
+
+
+
+.general-information .information form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+
+.general-information .information form input{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    outline:none;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    font-size: 1.1rem;
+    
+}
+
+.general-information .information form button{
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.general-information  .search p{
+    color: gold;
+    width: 90%;
+} 
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: blue;
+    border-top:5px solid black;
+    margin-top: 300px;
+    box-shadow: inset 0px -3px  10px black;
+    
+}
+
+.container-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    color: white;
+}
+
+.container-footer .content-footer{
+    flex-basis:24%;
+}
+
+.container-footer .content-footer .links-reviw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+}
+
+.container-footer .content-footer .links-reviw a{
+    color: #ffffff;
+}
+
+
+
+
+.me{
+    background-color:black;
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.social-media{
+    display: flex;
+   
+}
+
+
+.social-media svg{
+    height: 60px;
+    width: 60px;
+    color: white;
+    transition:all 0.3s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.social-media svg:hover{
+    color:rgba(0, 0, 0, 0.747);
+}
+
+
+
+
+
+@media (max-width:750px) and (min-width:451px) {
+    html ,body{
+        font-size: 12px;
+    }
+
+
+    .navbar ul li {
+        padding: 15px;
+    }
+
+    .Home-background{
+       font-size: 1.4rem;
+        height: 1000px;
+        flex-direction: column;
+        
+    }
+
+    .left {
+        width:100%;
+    }
+    .sgin{
+        width: 95%;
+    }
+
+    .defination .def {
+        flex-basis: 30%;
+}
+
+.card-container .all-card .card {
+	flex-basis: 46%;
+
+}
+
+.general-information .information {
+	padding: 10px;
+	flex-basis: 33%;
+	line-height: 1.5;
+	height: 163px;
+}
+
+.general-information {
+	overflow: hidden;
+}
+
+.container-footer {
+	align-items: end;
+	padding: 15px;
+	line-height: 1.6;
+}
+
+
+}
+
+@media (max-width:450px) and (min-width:300.1px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header .navbar ul li{
+        padding: 10px
+    }
+
+    .navbar{
+        padding-right: 7px;
+    }
+
+    .Home-background{
+        height:900px;
+        flex-direction: column;
+        
+    }
+
+
+    .left{
+        width: 100%;
+        height: 350px;
+        background-image: url('https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-1920x1080-4523.jpg');
+        background-position:right 50%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right{
+        height: 100%;
+    }
+    
+
+    .all-content {
+        padding: 40px 15px;
+        height: 100%;
+    }
+
+    .public {
+        margin-top: 122px;
+    }
+
+    .defination .def .img{
+        width: 100%;
+        height: 130px;
+    }
+
+    .defination .def {
+        flex-basis: 75%;
+}
+
+.card-container .all-card .card {
+	flex-basis: 100%;
+}
+
+.content-footer{
+    flex-basis: 50%;
+}
+
+.general-information .information{
+    flex-basis: 49%;
+}
+
+
+.general-information {
+	background-position: 0% 100%;
+	
+}
+
+.general-information .information{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    align-items: start;
+    justify-content: center;
+    line-height: 1.6;
+    white-space:normal ;
+    margin-bottom:10px;
+}
+
+.container-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.container-footer .content-footer{
+    flex-basis:100%;
+    padding: 15px;
+   
+}
+}
+
+@media (max-width:300px){
+    html , body{
+        font-size: 11px;
+    }
+
+    .logo a{
+        padding-left: 2px;
+    }
+
+    .navbar{
+        padding-right: 1px;
+    }
+
+    .navbar ul li{
+        padding: 5px;
+    }
+
+    .defination .def {
+        flex-basis: 90%;
+    }
+
+    .general-information {
+        margin-top: 150px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-evenly;
+       
+    }
+
+    .container-footer {
+        align-items: start;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .container-footer .content-footer{
+        margin-bottom: 10px;
+    }
+
+}
